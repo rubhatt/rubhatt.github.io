@@ -1,8 +1,16 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<body>
-<h1>Hello, world</h1>
-</body>
-
-</html>
+<div id="posts">
+    <h2>Posts</h2>
+	{% for post in site.posts %}
+	<div class="post">
+	    <div>
+		<span class="post_date">
+		    {{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a>
+		</span>
+	    </div>
+	</div>
+	{% endfor %}
+</div>
