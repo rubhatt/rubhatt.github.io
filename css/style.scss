@@ -1,0 +1,33 @@
+---
+---
+
+$font-stack   : Helvetica, sans-serif;
+$primary-color: #333333;
+$menu-bg-color: #333333;
+$menu-fg-color: #C5BCBC;
+
+body {
+    font : 100% $font-stack;
+    color: $primary-color;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $menu-bg-color;
+}
+
+.main-nav li {
+    float: left;
+}
+
+.main-nav li a {
+    display: block;
+    color: $menu-fg-color;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
